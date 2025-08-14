@@ -102,7 +102,7 @@ This section outlines the workflow from data preparation to premium calculation 
 
 The Excel dashboard allows underwriters and actuaries to explore claims patterns interactively by year, claim type, and location, supporting transparent communication with clients.
 
-🔗 **[View Full Dashboard in Excel](https://project.novypro.com/ud876F)**
+🔗 **[View Full Dashboard in Excel](https://project.novypro.com/IBCE2r)**
 
 ### Dashboard Snapshot
 
