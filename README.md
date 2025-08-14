@@ -5,13 +5,13 @@
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 ![Domain](https://img.shields.io/badge/Domain-Insurance-red)
 
-> An Excel-based actuarial pricing project analyzing marine liability claims to improve pricing accuracy, manage risk exposure, and support sustainable underwriting decisions.
+> An Excel-based actuarial pricing model and interactive dashboard assessing Marine Liability insurance risk, applying experience-based rating, inflation adjustments, and large loss loadings to produce competitive yet sustainable premiums.
 
 ---
 
 ## 1. Overview
 
-This project uses Excel (PivotTables, charts, formulas) and actuarial methods to analyze marine liability claims, identify key loss trends, model severity and frequency, and calculate premiums adjusted for inflation, deductibles, and policy limits. The result is a pricing & risk assessment report with clear assumptions, methodology, and sensitivity-tested recommendations.
+This project uses Microsoft Excel to analyze six years of historical marine liability claims data (2018–2023) and produce an actuarially sound premium for the upcoming policy year. The work combines risk assessment, experience-based rating, large loss handling, and sensitivity testing, supported by a dynamic dashboard for stakeholder communication.
 
 ---
 
@@ -19,28 +19,27 @@ This project uses Excel (PivotTables, charts, formulas) and actuarial methods to
 
 ### 2.1. Business Problem
 
-Marine insurers face growing pressure from rising claims and volatile loss patterns.
-This project aims to help underwriting and actuarial teams develop a more data-driven, transparent pricing process for liability coverage.
+Marine insurers face volatility in claims cost due to high-severity but low-frequency events, such as environmental pollution or major collisions. Pricing needs to balance competitiveness with financial stability, accounting for trends, inflation, and rare catastrophic losses.
 
 > **Key questions addressed:**
 >
-> * What are the historical trends in claim frequency and severity?
-> * Which factors most significantly impact large vs. attritional claims?
-> * How do policy limits and deductibles influence net losses?
-> * What premium adjustments are needed to remain competitive while covering risk?
+> * What are the trends in claims frequency and severity over time?
+> * Which claim types and locations contribute the most to losses?
+> * How should large loss events be incorporated into the premium?
+> * What is the impact of changes in claim severity on overall pricing?
 
 ### 2.2. Business Impact & Insights
 
-* Identified 10+ recurring loss drivers, including weather-related incidents and high-value collisions.
-* Premium sensitivity analysis showed that a 5% rise in claim severity could increase required premium by 8–10%.
-* Differentiated pricing for attritional vs. large loss segments reduced underwriting error by 15%.
-* Clear documentation of assumptions improved pricing transparency for stakeholders.
+* Environmental Pollution emerges as the costliest risk, both in frequency and severity.
+* The Atlantic Ocean has the highest severity due to a $5M pollution loss.
+* Large loss loadings reduce year-to-year premium volatility.
+* Sensitivity analysis reveals significant premium changes with small shifts in severity.
 
 ---
 
 ## 3. Data Sources
 
-The dataset was provided as part of an actuarial training project and loaded into Microsoft Excel for cleaning, transformation, and analysis. It contains marine liability claim records with detailed policy and loss attributes.
+The dataset was provided as part of an actuarial pricing simulation project and loaded into Microsoft Excel for cleaning, calculation, and visualization. It includes historical Marine Liability claims for multiple insured vessels, covering claim amounts, deductibles, limits, and exposure data (gross tonnage).
 
 **Key Fields:**
 
@@ -52,6 +51,8 @@ The dataset was provided as part of an actuarial training project and loaded int
 * Capped Net Adjusted Incurred Claim
 * Attritional Claim Flag (< \$1M)
 * Year of Loss
+* Claim Type (Collision, Cargo Liability, Damage to Other Vessels, Environmental Pollution, Injury to Third Parties)
+* Claim Status (Closed, Open, Litigation)
 
 ### 🔗 Dataset Links
 
@@ -93,18 +94,40 @@ This section outlines the workflow from data preparation to premium calculation 
 - Documented all assumptions and methodologies in a pricing report
 - Provided scenario testing (best-case, base-case, worst-case) for portfolio resilience
 - Outlined potential regulatory and market impacts on pricing stability
+- Included commentary on claim drivers, exposure patterns, and loss concentration risks
 
 ---
 
-## 5. Project Report
+## 5. Excel Dashboard Design
 
-The project deliverable is a detailed Excel-based actuarial pricing & risk assessment report containing:
+The Excel dashboard allows underwriters and actuaries to explore claims patterns interactively by year, claim type, and location, supporting transparent communication with clients.
 
-- Data cleaning & calculated metrics
-- Premium calculations with sensitivity testing
-- Written commentary on assumptions, risks, and recommendations
+🔗 **[View Full Dashboard in Excel](https://project.novypro.com/ud876F)**
 
-📄 **[View Full Project Report](https://drive.google.com/file/d/1hSsFWxDAFfA2NYXEGrgZjDSBnbMxgHri/view?usp=sharing)**
+### Dashboard Snapshot
+
+![Marine Liability Dashboard](https://github.com/annievu22/Marine_Liability_Pricing_Risk_Project/blob/main/Marine%20Liability%20Project%20-%20Dashboard.jpeg)
+
+---
+
+### Walkthrough of Key Visuals:
+* **KPI Cards (Top Left):** 
+Total Claims, Total Loss, Average Severity, Top Claim Type, and Top Loss Location.
+
+* **Total Loss by Year (Bar Chart):** 
+Tracks yearly loss patterns and highlights volatility due to large losses.
+
+* **Loss Share by Claim Type (Pie Chart):** 
+Shows proportional loss contribution from each claim category.
+
+* **Loss Share by Location (Donut Chart):** 
+Visualizes geographical loss concentration, with the Atlantic Ocean as the leading risk area.
+
+* **Total Claims Over Time (Line Chart):** 
+Displays claim volume trends over the six-year period.
+
+* **Average Severity by Claim Type (Bar Chart):** 
+Highlights costliest claim categories, guiding underwriting focus.
 
 ---
 
